@@ -1,0 +1,82 @@
+@import 'var';
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $myBg;
+    position: relative;
+    height: 100vh;
+}
+ .sun{
+     border-radius: 60%;
+     background-color: $sunColor;
+     height: 5rem;
+     width: 5rem;
+     position: absolute;
+     top: 3rem;
+     left: 3rem;
+     box-shadow: 27px 14px 32px 13px $sunShadow;
+      }
+  .slideIn{
+      transform: translateX(-5rem);
+      animation: slideIn 3s ease-out forwards;
+  }
+  @keyframes slideIn {
+      100% { transform: translateX(0);}
+  }
+  h1{
+      padding-top: 25vh;
+      text-align: center;
+      font-size: medium;
+      font-weight: bold;
+        }
+  .fadeIn {
+      opacity: 0;
+      animation: fadeIn 1s 2s ease-in forwards;
+  }
+  @keyframes fadeIn {
+      100% { opacity: 1;}      
+  }
+  .flower{
+   position: absolute;
+   top: 600px;
+   left: 50%;
+
+  
+   .flower_steam{
+    background-color: darkgreen;
+    height: 300px;
+    width: 5px;
+      }
+    .flower_steam::before{
+        content:"" ;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        background-color: indigo;
+        position: absolute;
+        right: -3.5em;
+
+    }
+    .flower_steam::after{
+        content: "";
+        height: 100px;
+        width: 100px;
+        background-color: darkgreen;
+        border-radius: 100% 0;
+        position: absolute;
+        top: 9rem;
+    }
+
+    .stemas{
+        opacity: 0;
+        animation: gele 1s 2s ease-in forwards;
+        transform: translateY(5rem);
+    }
+    @keyframes gele {
+        100% { transform: translateY(0);}
+        100% { opacity: 1;}
+    }
+  }
+

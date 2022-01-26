@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+  position: relative;
+  height: 100vh;
+}
+
+.sun {
+  border-radius: 60%;
+  background-color: yellow;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  -webkit-box-shadow: 27px 14px 32px 13px #caca76;
+          box-shadow: 27px 14px 32px 13px #caca76;
+}
+
+.slideIn {
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-animation: slideIn 3s ease-out forwards;
+          animation: slideIn 3s ease-out forwards;
+}
+
+@-webkit-keyframes slideIn {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+h1 {
+  padding-top: 25vh;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s 2s ease-in forwards;
+          animation: fadeIn 1s 2s ease-in forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.flower {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+}
+
+.flower .flower_steam {
+  background-color: darkgreen;
+  height: 300px;
+  width: 5px;
+}
+
+.flower .flower_steam::before {
+  content: "";
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  background-color: indigo;
+  position: absolute;
+  right: -3.5em;
+}
+
+.flower .flower_steam::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: darkgreen;
+  border-radius: 100% 0;
+  position: absolute;
+  top: 9rem;
+}
+
+.flower .stemas {
+  opacity: 0;
+  -webkit-animation: gele 1s 2s ease-in forwards;
+          animation: gele 1s 2s ease-in forwards;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+}
+
+@-webkit-keyframes gele {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gele {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
