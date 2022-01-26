@@ -57,8 +57,16 @@ body{
         background-color: indigo;
         position: absolute;
         right: -3.5em;
-
+        animation: ziedas 1s ease infinite  ;
     }
+    @keyframes ziedas {
+        0%, 100% {
+          background-color: none;
+        }
+        50% {
+          background-color: rgb(135, 92, 167);
+        }
+      }
     .flower_steam::after{
         content: "";
         height: 100px;
@@ -71,7 +79,7 @@ body{
 
     .stemas{
         opacity: 0;
-        animation: gele 1s 2s ease-in forwards;
+        animation: gele 2s ease forwards ;
         transform: translateY(5rem);
     }
     @keyframes gele {

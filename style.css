@@ -88,6 +88,26 @@ h1 {
   background-color: indigo;
   position: absolute;
   right: -3.5em;
+  -webkit-animation: ziedas 1s ease infinite;
+          animation: ziedas 1s ease infinite;
+}
+
+@-webkit-keyframes ziedas {
+  0%, 100% {
+    background-color: none;
+  }
+  50% {
+    background-color: #875ca7;
+  }
+}
+
+@keyframes ziedas {
+  0%, 100% {
+    background-color: none;
+  }
+  50% {
+    background-color: #875ca7;
+  }
 }
 
 .flower .flower_steam::after {
@@ -102,8 +122,8 @@ h1 {
 
 .flower .stemas {
   opacity: 0;
-  -webkit-animation: gele 1s 2s ease-in forwards;
-          animation: gele 1s 2s ease-in forwards;
+  -webkit-animation: gele 2s ease forwards;
+          animation: gele 2s ease forwards;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
 }
